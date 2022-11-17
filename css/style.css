@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Rubik+Distressed&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.body{
+    background: url("../bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+
+
+}
+
+#highscorebox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+
+
+}
+
+#board{
+    background: linear-gradient(rgb(185, 185, 202),rgb(35, 216, 192));
+    width: 98vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr); 
+}
+
+.head{
+    background: linear-gradient(black,red);
+    border-radius: 9px;
+    border: 2px solid purple;
+    transform: scale(1.02);
+}
+
+.snake{
+    background : linear-gradient(purple,blue);
+    border: .25vmin solid green;
+    border-radius: 25px;
+}
+
+.food{
+    background : red;
+    border: .25vmin solid black;
+    border-radius: 35px;
+}
